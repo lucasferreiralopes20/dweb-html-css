@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding : 0;
+}
+
+header{
+    height: 70px;
+    background-color: var(--cor2);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row; 
+}
+
+#Logo {
+    border: 1px solid black;
+    width: 150px;
+    height: 100%;
+    color: within;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+}
+#Logo img {
+    w 
+nav {
+    border: 1px solid black;
+    display: flex; 
+    margin-left: auto;
+}
+
+a {
+    text-emphasis: none; 
+    text-transform: uppercase;
+    background-color: black;
+    color: brown;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 10px 0 10px;
+}
+
+a:hover {
+background-color: var(--cor1);
+
