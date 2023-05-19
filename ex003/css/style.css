@@ -1,16 +1,34 @@
 @charset "UTF-8";
 
-*{
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+:root {
+    --cor1:
+    --cor2
+
+
+    *{
     margin: 0;
     padding : 0;
 }
 
 header{
+    width: ;
     height: 70px;
     background-color: var(--cor2);
     border: 1px solid black;
     display: flex;
     flex-direction: row; 
+    padding: 0 15px 0 15px;
+}
+
+#header {
+    display: flex;
+    max-wdth: 1500px;
+    margin: auto;
 }
 
 #Logo {
@@ -25,7 +43,8 @@ header{
 
 }
 #Logo img {
-    w 
+    width: 60px;
+}
 nav {
     border: 1px solid black;
     display: flex; 
@@ -46,4 +65,42 @@ a {
 
 a:hover {
 background-color: var(--cor1);
+}
 
+figure{
+    max-width: 1500px;
+    height: 300px;
+    background-image: url("../imagens/pexels-stefan-lorentz-668196.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+text-figure-small{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase
+    font-weight: bold;
+
+#text-figure-1{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+#text--figure-2 {
+    color: wheat;
+    text-transform: uppercase;
+    font-size: ; 72px;
+    font-weight: bold;
+    font-family: varsity;
+}
+#tent-figure-3{
+    border-top: 1px solid white;
+}
+@media (max-width: 550px) {
+    nav {
+        display: none;
+    }
+
+}
