@@ -1,16 +1,14 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: ;
-    src: url();
+:root {
+    --cor1: #88453E;
+    --cor2: #232526;
+    --cor3: #A69D8D;
+    --cor4: #F2AF88;
+    --cor5: #F22222; 
 }
 
-:root {
-    --cor1:
-    --cor2
-
-
-    *{
+*{
     margin: 0;
     padding : 0;
 }
@@ -27,7 +25,7 @@ header{
 
 #header {
     display: flex;
-    max-wdth: 1500px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -44,6 +42,9 @@ header{
 }
 #Logo img {
     width: 60px;
+}
+#Logo p {
+    margin-left: 10px;
 }
 nav {
     border: 1px solid black;
@@ -78,9 +79,9 @@ figure{
 text-figure-small{
     color: white;
     font-size: 30px;
-    text-transform: uppercase
+    text-transform: uppercase;
     font-weight: bold;
-
+}
 #text-figure-1{
     color: white;
     font-size: 30px;
@@ -91,16 +92,49 @@ text-figure-small{
 #text--figure-2 {
     color: wheat;
     text-transform: uppercase;
-    font-size: ; 72px;
+    font-size: 72px;
     font-weight: bold;
     font-family: varsity;
 }
 #tent-figure-3{
     border-top: 1px solid white;
 }
+main {
+    width: 1500px;
+    height: 900px;
+    margin: 0 auto 50px auto;
+   border: 1px solid black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+main > div {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left:  500px;
+    height:100px;
+    width: 100px;
+    border: 1px solid black;
+    } 
+footer {
+    background-color: var(--cor2);
+}
 @media (max-width: 550px) {
     nav {
-        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 90px;
+        margin-top:  -200%;
+        transition: all 10s;
     }
 
+    label[for='botao-menu'] {
+        display: block;   
+    }
+    label[for='botao'] {
+        display: block;
+    }
 }
